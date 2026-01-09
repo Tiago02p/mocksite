@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos e Condições - Salt Flow Surf School</title>
+    <link rel="icon" type="image/x-icon" href="https://saltflowsurf.com/favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .legal-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            border: 1px solid #e1e8ed;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 50px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '⚖️';
+            font-size: 80px;
+            position: absolute;
+            opacity: 0.15;
+            top: 10px;
+            right: 20px;
+            transform: rotate(15deg);
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #ffd700, #ff6b6b);
+        }
+
+        .header h1 {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 2;
+        }
+
+        .header .subtitle {
+            font-size: 20px;
+            opacity: 0.95;
+            font-weight: 300;
+            position: relative;
+            z-index: 2;
+        }
+
+        .quick-nav {
+            background: #f8f9fa;
+            padding: 20px 30px;
+            border-bottom: 1px solid #e9ecef;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .quick-nav h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .quick-nav h3::before {
+            content: '📍';
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav-link {
+            background: white;
+            border: 1px solid #667eea;
+            color: #667eea;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .nav-link:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid #e9ecef;
+            position: relative;
+            transition: all 0.3s;
+            scroll-margin-top: 100px;
+        }
+
+        .section:hover {
+            border-color: #667eea;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.1);
+        }
+
+        .section-number {
+            position: absolute;
+            top: -15px;
+            left: 30px;
+            background: #667eea;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+        }
+
+        .section h2 {
+            color: #764ba2;
+            font-size: 24px;
+            margin-bottom: 20px;
+            padding-left: 50px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+
+        .section p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #495057;
+            line-height: 1.8;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f6f8ff 0%, #edf1ff 100%);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 25px 0;
+            border-left: 5px solid #667eea;
+        }
+
+        .highlight-box h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .highlight-box h3::before {
+            content: '💡';
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+            border: 2px solid #ffc107;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+
+        .warning-box h3 {
+            color: #856404;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .warning-box h3::before {
+            content: '⚠️';
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .contact-section h2 {
+            color: white;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+
+        .contact-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .contact-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+            border-color: white;
+        }
+
+        .contact-button .icon {
+            font-size: 32px;
+        }
+
+        .signature-section {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 40px;
+            border: 2px dashed #adb5bd;
+        }
+
+        .signature {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 36px;
+            color: #667eea;
+            margin: 20px 0;
+        }
+
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 25px;
+            background: linear-gradient(135deg, #667eea, #ff6b6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .footer-column h4 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .back-to-app {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            color: #667eea;
+            padding: 18px 36px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 1000;
+            transition: all 0.4s;
+            border: 2px solid #667eea;
+        }
+
+        .back-to-app:hover {
+            background: #667eea;
+            color: white;
+            transform: translateX(-50%) translateY(-5px);
+            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
+        }
+
+        .back-to-app::before {
+            content: '🏄‍♂️';
+            font-size: 24px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .quick-nav {
+                padding: 15px;
+                position: static;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .section {
+                padding: 25px 20px;
+            }
+
+            .section h2 {
+                font-size: 22px;
+                padding-left: 40px;
+            }
+
+            .contact-buttons {
+                grid-template-columns: 1fr;
+            }
+
+            .back-to-app {
+                bottom: 15px;
+                padding: 15px 25px;
+                font-size: 14px;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .legal-container {
+                box-shadow: none;
+                border: none;
+            }
+
+            .back-to-app,
+            .quick-nav {
+                display: none;
+            }
+
+            .section {
+                break-inside: avoid;
+            }
+        }
+
+        /* Animations */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .section {
+            animation: slideIn 0.5s ease-out;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div class="legal-container">
+        <div class="header">
+            <h1>Termos e Condições</h1>
+            <div class="subtitle">Regras e condições para utilização dos nossos serviços de surf</div>
+        </div>
+
+        <div class="quick-nav">
+            <h3>Navegação Rápida</h3>
+            <div class="nav-links">
+                <a href="#aceitacao" class="nav-link">1. Aceitação</a>
+                <a href="#definicoes" class="nav-link">2. Definições</a>
+                <a href="#elegibilidade" class="nav-link">3. Elegibilidade</a>
+                <a href="#registro" class="nav-link">4. Registo</a>
+                <a href="#marcacoes" class="nav-link">5. Marcações</a>
+                <a href="#seguranca" class="nav-link">6. Segurança</a>
+                <a href="#responsabilidade" class="nav-link">7. Responsabilidade</a>
+                <a href="#condicoes" class="nav-link">8. Condições</a>
+                <a href="#imagem" class="nav-link">9. Imagem</a>
+                <a href="#contactos" class="nav-link">10. Contactos</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <section id="aceitacao" class="section">
+                <div class="section-number">1</div>
+                <h2>Aceitação dos Termos</h2>
+                <p>
+                    Ao registar-se na <strong>Salt Flow - Ofir Surf School</strong> e utilizar os nossos serviços, 
+                    aceita expressamente estes Termos e Condições na sua integralidade. 
+                    Estes termos constituem um acordo legalmente vinculativo entre si e a escola.
+                </p>
+                <div class="warning-box">
+                    <h3>Aviso Importante</h3>
+                    <p>
+                        O surf é uma atividade desportiva com riscos inerentes. Ao aceitar estes termos, 
+                        reconhece que está ciente dos riscos associados à prática de surf e que participa 
+                        nas aulas por sua própria conta e risco.
+                    </p>
+                </div>
+            </section>
+
+            <section id="definicoes" class="section">
+                <div class="section-number">2</div>
+                <h2>Definições</h2>
+                <div class="highlight-box">
+                    <p><strong>"Escola"</strong> - Salt Flow - Ofir Surf School, escola de surf registada e certificada para operar na Praia de Ofir.</p>
+                    <p><strong>"Serviços"</strong> - Aulas de surf, stand-up paddle, aluguer de equipamento, workshops e atividades relacionadas.</p>
+                    <p><strong>"Praia de Ofir"</strong> - Local oficial onde são prestados os serviços, sujeito a condições marítimas específicas.</p>
+                    <p><strong>"Utilizador/Aluno"</strong> - Pessoa que utiliza os nossos serviços, mediante registo e aceitação destes termos.</p>
+                    <p><strong>"Instrutor"</strong> - Profissional certificado pela escola para ministrar aulas de surf.</p>
+                </div>
+            </section>
+
+            <section id="elegibilidade" class="section">
+                <div class="section-number">3</div>
+                <h2>Elegibilidade e Requisitos</h2>
+                <p>Para frequentar as nossas aulas, deve cumprir os seguintes requisitos:</p>
+                
+                <div class="highlight-box">
+                    <h3>Requisitos Obrigatórios</h3>
+                    <p>✅ <strong>Idade mínima:</strong> 8 anos para aulas infantis, 18 anos para aulas de adultos</p>
+                    <p>✅ <strong>Autorização parental:</strong> Menores necessitam de autorização por escrito dos pais/responsáveis</p>
+                    <p>✅ <strong>Condição física:</strong> Declarar qualquer condição médica relevante antes das aulas</p>
+                    <p>✅ <strong>Natação:</strong> Saber nadar é obrigatório para todas as aulas</p>
+                </div>
+            </section>
+
+            <section id="registro" class="section">
+                <div class="section-number">4</div>
+                <h2>Registo e Conta</h2>
+                <p>
+                    <strong>4.1.</strong> O registo na aplicação é obrigatório para participar em qualquer aula. 
+                    Os dados fornecidos devem ser verídicos, completos e atualizados.
+                </p>
+                <p>
+                    <strong>4.2.</strong> É responsável pela confidencialidade das suas credenciais de acesso. 
+                    Qualquer atividade realizada com a sua conta será da sua responsabilidade.
+                </p>
+                <p>
+                    <strong>4.3.</strong> A conta é pessoal e intransmissível. Não pode ceder ou transferir 
+                    o seu registo a terceiros.
+                </p>
+                <p>
+                    <strong>4.4.</strong> Reservamo-nos o direito de suspender ou encerrar contas que violem 
+                    estes termos ou sejam utilizadas de forma abusiva.
+                </p>
+            </section>
+
+            <section id="marcacoes" class="section">
+                <div class="section-number">5</div>
+                <h2>Marcações e Pagamentos</h2>
+                <div class="highlight-box">
+                    <h3>Processo de Marcação</h3>
+                    <p><strong>5.1.</strong> As aulas devem ser marcadas com antecedência mínima de 24 horas através da aplicação.</p>
+                    <p><strong>5.2.</strong> O pagamento é realizado no local da aula, antes do seu início. Aceitamos numerário, MB Way e cartão.</p>
+                    <p><strong>5.3.</strong> Preços incluem: equipamento completo (fato, prancha, leash), seguro de acidentes pessoais e instrução certificada.</p>
+                    <p><strong>5.4.</strong> <em>Não incluem:</em> Transporte, alimentação, estacionamento ou despesas pessoais.</p>
+                </div>
+                
+                <div class="warning-box">
+                    <h3>Política de Cancelamento</h3>
+                    <p>
+                        • Cancelamentos com mais de 48 horas: reembolso total<br>
+                        • Cancelamentos com 24-48 horas: reembolso de 50%<br>
+                        • Cancelamentos com menos de 24 horas: sem reembolso<br>
+                        • Cancelamentos pela escola: reembolso total ou reagendamento
+                    </p>
+                </div>
+            </section>
+
+            <section id="seguranca" class="section">
+                <div class="section-number">6</div>
+                <h2>Regras de Segurança</h2>
+                <p>O utilizador obriga-se a cumprir rigorosamente as seguintes regras de segurança:</p>
+                
+                <div class="highlight-box">
+                    <h3>Regras Obrigatórias</h3>
+                    <p>🔴 <strong>Equipamento:</strong> Usar sempre o equipamento de segurança fornecido pela escola</p>
+                    <p>🔴 <strong>Sinalização:</strong> Respeitar as bandeiras e avisos da praia e dos nadadores-salvadores</p>
+                    <p>🔴 <strong>Área designada:</strong> Manter-se dentro da área designada para aulas</p>
+                    <p>🔴 <strong>Instruções:</strong> Seguir sempre as instruções dos instrutores</p>
+                    <p>🔴 <strong>Comunicação:</strong> Informar imediatamente qualquer incidente ou desconforto</p>
+                    <p>🔴 <strong>Consumo:</strong> Não consumir álcool ou drogas antes ou durante as aulas</p>
+                </div>
+            </section>
+
+            <section id="responsabilidade" class="section">
+                <div class="section-number">7</div>
+                <h2>Responsabilidade e Seguros</h2>
+                <p>
+                    <strong>7.1.</strong> Todas as aulas incluem seguro de acidentes pessoais com cobertura 
+                    de acordo com a legislação portuguesa. A apólice está disponível para consulta no local.
+                </p>
+                <p>
+                    <strong>7.2.</strong> A escola não se responsabiliza por objetos pessoais perdidos, 
+                    danificados ou roubados durante as aulas. Recomendamos que não traga objetos de valor.
+                </p>
+                <p>
+                    <strong>7.3.</strong> O utilizador assume total responsabilidade por danos causados 
+                    a terceiros ou ao equipamento da escola devido a uso inadequado ou negligência.
+                </p>
+                <p>
+                    <strong>7.4.</strong> Ao aceitar estes termos, declara que está em condições físicas 
+                    adequadas para a prática de surf e isenta a escola de responsabilidade por lesões 
+                    resultantes de condições médicas pré-existentes não declaradas.
+                </p>
+            </section>
+
+            <section id="condicoes" class="section">
+                <div class="section-number">8</div>
+                <h2>Condições Meteorológicas e de Mar</h2>
+                <p>
+                    <strong>8.1.</strong> As aulas estão sujeitas às condições do mar e meteorológicas 
+                    da Praia de Ofir. A segurança é sempre a nossa prioridade.
+                </p>
+                <p>
+                    <strong>8.2.</strong> Em caso de condições adversas, a escola poderá:
+                </p>
+                <div class="highlight-box">
+                    <p>• <strong>Cancelar a aula:</strong> Com reembolso total ou reagendamento</p>
+                    <p>• <strong>Alterar o local:</strong> Para praia alternativa dentro da região</p>
+                    <p>• <strong>Modificar a atividade:</strong> Para teoria ou atividades em terra</p>
+                </div>
+                <p>
+                    <strong>8.3.</strong> A decisão final sobre a realização das aulas cabe sempre 
+                    aos instrutores e nadadores-salvadores.
+                </p>
+            </section>
+
+            <section id="imagem" class="section">
+                <div class="section-number">9</div>
+                <h2>Propriedade e Utilização de Imagens</h2>
+                <p>
+                    <strong>9.1.</strong> A escola poderá tirar fotografias ou vídeos durante as aulas 
+                    para fins de:
+                </p>
+                <div class="highlight-box">
+                    <p>🎯 <strong>Promoção:</strong> Redes sociais, website e materiais de marketing</p>
+                    <p>📊 <strong>Análise:</strong> Melhoria técnica e pedagógica</p>
+                    <p>📚 <strong>Arquivo:</strong> Registo histórico das atividades</p>
+                </div>
+                <p>
+                    <strong>9.2.</strong> Pode opor-se à utilização da sua imagem a qualquer momento, 
+                    contactando-nos através dos canais indicados.
+                </p>
+                <p>
+                    <strong>9.3.</strong> Ao aceitar a autorização de imagem, concede à escola o direito 
+                    não exclusivo de utilizar as suas imagens nos canais mencionados.
+                </p>
+            </section>
+
+            <section class="contact-section" id="contactos">
+                <h2>Contacte-nos</h2>
+                <p>Tem dúvidas sobre estes termos? Estamos aqui para ajudar!</p>
+                
+                <div class="contact-buttons">
+                    <a href="mailto:info@saltflowofir.pt" class="contact-button">
+                        <span class="icon">✉️</span>
+                        <span>Email</span>
+                        <small>info@saltflowofir.pt</small>
+                    </a>
+                    
+                    <a href="tel:+351931761831" class="contact-button">
+                        <span class="icon">📞</span>
+                        <span>Telefone</span>
+                        <small>+351 931 761 831</small>
+                    </a>
+                    
+                    <a href="https://wa.me/351931761831" class="contact-button">
+                        <span class="icon">💬</span>
+                        <span>WhatsApp</span>
+                        <small>Envie uma mensagem</small>
+                    </a>
+                    
+                    <a href="https://instagram.com/saltflowsurf" class="contact-button">
+                        <span class="icon">📷</span>
+                        <span>Instagram</span>
+                        <small>@saltflowsurf</small>
+                    </a>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section-number">10</div>
+                <h2>Informações Legais</h2>
+                <p>
+                    <strong>10.1. Lei Aplicável:</strong> Estes termos são regidos pela lei portuguesa.
+                </p>
+                <p>
+                    <strong>10.2. Foro:</strong> Qualquer litígio será submetido ao Tribunal Judicial 
+                    da Comarca de Braga, com expressa renúncia a qualquer outro.
+                </p>
+                <p>
+                    <strong>10.3. Alterações:</strong> Reservamo-nos o direito de alterar estes termos. 
+                    Alterações significativas serão comunicadas com 15 dias de antecedência.
+                </p>
+                <p>
+                    <strong>10.4. Integridade:</strong> Estes termos representam o acordo completo 
+                    entre as partes, substituindo todos os acordos anteriores.
+                </p>
+                <p>
+                    <strong>10.5. Validade:</strong> Se qualquer disposição for considerada inválida, 
+                    as restantes manter-se-ão em pleno vigor e efeito.
+                </p>
+            </section>
+
+            <section class="signature-section">
+                <h3>Salt Flow - Ofir Surf School</h3>
+                <div class="signature">Pedro Marques</div>
+                <p>Diretor e Instrutor Certificado</p>
+                <p>Certificação: IPDJ Nº 12345/2023</p>
+                <p style="margin-top: 20px; color: #666; font-size: 14px;">
+                    Praia de Ofir, Fão, Esposende | NIF: PT123456789<br>
+                    Registo Turismo de Portugal: RNAAT 456/2023
+                </p>
+            </section>
+        </div>
+
+        <div class="footer">
+            <div class="footer-logo">Salt Flow ≋ Surf & SUP School</div>
+            
+            <div class="footer-info">
+                <div class="footer-column">
+                    <h4>Localização</h4>
+                    <p>Praia de Ofir, Fão</p>
+                    <p>Av. António Veiga, 4740-331</p>
+                    <p>Esposende, Portugal</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Horário</h4>
+                    <p>Segunda a Domingo</p>
+                    <p>9:00 - 18:00</p>
+                    <p>Aulas todo o ano</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Certificações</h4>
+                    <p>IPDJ - Instrutor Certificado</p>
+                    <p>RNAAT - Turismo de Portugal</p>
+                    <p>Seguro de Responsabilidade Civil</p>
+                </div>
+            </div>
+            
+            <p style="margin-top: 30px; color: #adb5bd; font-size: 14px;">
+                © 2024 Salt Flow - Ofir Surf School. Todos os direitos reservados.<br>
+                Estes termos foram atualizados em 10 de Janeiro de 2024
+            </p>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-app" id="backButton">
+        Voltar para a Aplicação
+    </a>
+
+    <script>
+        // Enhanced back button with multiple fallbacks
+        document.getElementById('backButton').addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Try to detect if we're in a WebView
+            const isWebView = /(Android|iPhone|iPad).*Version\/[0-9].*Safari|Mobile|webview/i.test(navigator.userAgent);
+            
+            if (isWebView) {
+                // In WebView - try to close or go back
+                if (window.history.length > 1) {
+                    window.history.back();
+                } else if (window.ReactNativeWebView) {
+                    // Send message to React Native app
+                    window.ReactNativeWebView.postMessage('CLOSE_WEBVIEW');
+                } else {
+                    window.close();
+                }
+            } else {
+                // In regular browser
+                if (window.history.length > 1) {
+                    window.history.back();
+                } else {
+                    // Redirect to main website
+                    window.location.href = 'https://saltflowsurf.com';
+                }
+            }
+        });
+
+        // Add section highlighting on scroll
+        const sections = document.querySelectorAll('.section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function highlightCurrentSection() {
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                const sectionHeight = section.clientHeight;
+                
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    currentSection = section.id;
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                    link.style.background = '#764ba2';
+                    link.style.color = 'white';
+                } else {
+                    link.style.background = '';
+                    link.style.color = '';
+                }
+            });
+        }
+
+        window.addEventListener('scroll', highlightCurrentSection);
+        highlightCurrentSection(); // Initial call
+
+        // Add print functionality
+        const printBtn = document.createElement('button');
+        printBtn.innerHTML = '🖨️ Imprimir Termos';
+        printBtn.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            border: 2px solid #667eea;
+            color: #667eea;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 1001;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            transition: all 0.3s;
+            font-size: 14px;
+        `;
+        
+        printBtn.addEventListener('click', () => {
+            window.print();
+        });
+        
+        printBtn.addEventListener('mouseenter', () => {
+            printBtn.style.transform = 'translateY(-2px)';
+            printBtn.style.boxShadow = '0 8px 25px rgba(102, 126, 234, 0.3)';
+        });
+        
+        printBtn.addEventListener('mouseleave', () => {
+            printBtn.style.transform = '';
+            printBtn.style.boxShadow = '';
+        });
+        
+        document.body.appendChild(printBtn);
+
+        // Add copy functionality for contact info
+        document.querySelectorAll('.contact-button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                if (this.href.includes('mailto:')) {
+                    e.preventDefault();
+                    const email = this.href.replace('mailto:', '');
+                    navigator.clipboard.writeText(email).then(() => {
+                        const originalHTML = this.innerHTML;
+                        this.innerHTML = '<span class="icon">📋</span><span>Email copiado!</span>';
+                        setTimeout(() => {
+                            this.innerHTML = originalHTML;
+                        }, 2000);
+                    });
+                }
+            });
+        });
+
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
