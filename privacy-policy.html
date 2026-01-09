@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - Salt Flow Surf School</title>
+    <link rel="icon" type="image/x-icon" href="https://saltflowsurf.com/favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .legal-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 1px solid #e1e8ed;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4a90e2 0%, #2c6cb0 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header::before {
+            content: '🔐';
+            font-size: 60px;
+            position: absolute;
+            opacity: 0.2;
+            top: 20px;
+            right: 20px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .header .subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .meta-info {
+            background: #f8f9fa;
+            padding: 20px 30px;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .date {
+            color: #6c757d;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .date::before {
+            content: '📅';
+        }
+
+        .app-badge {
+            background: #4a90e2;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+
+        .app-badge:hover {
+            transform: translateY(-2px);
+            background: #3a80d2;
+        }
+
+        .app-badge::before {
+            content: '📱';
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            border-left: 4px solid #4a90e2;
+            transition: transform 0.2s;
+        }
+
+        .section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .section h2 {
+            color: #2c6cb0;
+            font-size: 22px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section h2::before {
+            content: '📌';
+            font-size: 20px;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #495057;
+        }
+
+        .highlight {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+            border: 1px solid #bbdefb;
+        }
+
+        .highlight h3 {
+            color: #1565c0;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .highlight h3::before {
+            content: '⚠️';
+        }
+
+        .contact-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .contact-button {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 18px;
+            background: white;
+            border: 2px solid #4a90e2;
+            border-radius: 12px;
+            color: #4a90e2;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        .contact-button:hover {
+            background: #4a90e2;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+        }
+
+        .contact-button .icon {
+            font-size: 24px;
+        }
+
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .footer-logo {
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: #4a90e2;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .footer-link {
+            color: #adb5bd;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-link:hover {
+            color: white;
+        }
+
+        .back-to-app {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            color: #4a90e2;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 1000;
+            transition: all 0.3s;
+        }
+
+        .back-to-app:hover {
+            background: #4a90e2;
+            color: white;
+            transform: translateX(-50%) translateY(-3px);
+            box-shadow: 0 6px 25px rgba(74, 144, 226, 0.4);
+        }
+
+        .back-to-app::before {
+            content: '←';
+            font-size: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 26px;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .section h2 {
+                font-size: 20px;
+            }
+
+            .contact-buttons {
+                grid-template-columns: 1fr;
+            }
+
+            .back-to-app {
+                bottom: 10px;
+                padding: 12px 24px;
+                font-size: 14px;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .legal-container {
+                box-shadow: none;
+                border: none;
+            }
+
+            .back-to-app,
+            .app-badge {
+                display: none;
+            }
+
+            .section {
+                break-inside: avoid;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section {
+            animation: fadeIn 0.5s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="legal-container">
+        <div class="header">
+            <h1>Política de Privacidade</h1>
+            <div class="subtitle">Como protegemos e processamos os seus dados</div>
+        </div>
+
+        <div class="meta-info">
+            <div class="date">
+                Última atualização: 10 de Janeiro de 2024 | Versão 2.1
+            </div>
+            <a href="https://apps.apple.com/app/salt-flow-surf-school/id123456" class="app-badge">
+                Voltar para a App
+            </a>
+        </div>
+
+        <div class="content">
+            <section class="section">
+                <h2>1. Responsável pelo Tratamento</h2>
+                <p>
+                    A <strong>Salt Flow - Ofir Surf School</strong>, com sede em Praia de Ofir, Fão, 
+                    Av. António Veiga, 4740-331 Esposende, Portugal, é a responsável pelo tratamento 
+                    dos seus dados pessoais, nos termos do Regulamento Geral sobre a Proteção de Dados (RGPD).
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>2. Dados Pessoais Recolhidos</h2>
+                <p>Recolhemos e processamos os seguintes tipos de dados:</p>
+                <div class="highlight">
+                    <h3>Dados de Identificação</h3>
+                    <p>• Nome completo, email, telefone, data de nascimento</p>
+                    <p>• Nacionalidade, morada, documento de identificação</p>
+                </div>
+                <div class="highlight">
+                    <h3>Dados de Atividade</h3>
+                    <p>• Histórico de aulas e reservas</p>
+                    <p>• Preferências e níveis de experiência em surf</p>
+                    <p>• Consentimentos e autorizações</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>3. Finalidades do Tratamento</h2>
+                <p>Os seus dados são tratados para:</p>
+                <p>✅ <strong>Prestação de serviços:</strong> Gestão de aulas, reservas e pagamentos na Praia de Ofir</p>
+                <p>✅ <strong>Segurança e obrigações legais:</strong> Seguros obrigatórios e comunicações de emergência</p>
+                <p>✅ <strong>Marketing:</strong> Apenas com o seu consentimento explícito para eventos e promoções</p>
+                <p>✅ <strong>Melhoria de serviços:</strong> Personalização da sua experiência de surf</p>
+            </section>
+
+            <section class="section">
+                <h2>4. Base Legal</h2>
+                <p>O tratamento dos seus dados assenta em:</p>
+                <div class="highlight">
+                    <p><strong>📋 Contrato:</strong> Para execução das aulas contratadas</p>
+                    <p><strong>👥 Consentimento:</strong> Para marketing e dados especiais</p>
+                    <p><strong>⚖️ Obrigação legal:</strong> Para seguros e obrigações fiscais</p>
+                    <p><strong>🎯 Interesse legítimo:</strong> Para comunicações operacionais</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>5. Partilha de Dados</h2>
+                <p>Os seus dados podem ser partilhados apenas com:</p>
+                <p>• <strong>Seguradoras:</strong> Para cobertura durante as aulas de surf</p>
+                <p>• <strong>Autoridades marítimas:</strong> Por exigência de segurança</p>
+                <p>• <strong>Parceiros logísticos:</strong> Apenas dados necessários para serviços específicos</p>
+                <p><em>Todos os subcontratados cumprem o RGPD e não transferimos dados para fora da UE.</em></p>
+            </section>
+
+            <section class="section">
+                <h2>6. Os Seus Direitos (RGPD)</h2>
+                <div class="highlight">
+                    <p><strong>🔍 Acesso:</strong> Saber que dados temos sobre si</p>
+                    <p><strong>✏️ Retificação:</strong> Corrigir dados inexatos</p>
+                    <p><strong>🗑️ Eliminação:</strong> Apagar os seus dados ("direito ao esquecimento")</p>
+                    <p><strong>⛔ Oposição:</strong> Opor-se a tratamentos específicos</p>
+                    <p><strong>📤 Portabilidade:</strong> Receber os seus dados num formato estruturado</p>
+                    <p><strong>⏸️ Limitação:</strong> Limitar o tratamento em certas situações</p>
+                    <p><strong>↩️ Revogação:</strong> Retirar consentimentos a qualquer momento</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>7. Exercer os Seus Direitos</h2>
+                <p>Para exercer qualquer direito de proteção de dados:</p>
+                
+                <div class="contact-buttons">
+                    <a href="mailto:protecaodados@saltflowofir.pt" class="contact-button">
+                        <span class="icon">✉️</span>
+                        <span>Enviar Email</span>
+                    </a>
+                    
+                    <a href="tel:+351932475503" class="contact-button">
+                        <span class="icon">📞</span>
+                        <span>Ligar Agora</span>
+                    </a>
+                    
+                    <a href="https://wa.me/351932475503" class="contact-button">
+                        <span class="icon">💬</span>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+                
+                <p><strong>Endereço postal:</strong> Salt Flow - Ofir Surf School, Praia de Ofir, Fão, 4740-331 Esposende, Portugal</p>
+                <p><strong>Prazo de resposta:</strong> 30 dias úteis máximo</p>
+            </section>
+
+            <section class="section">
+                <h2>8. Segurança e Conservação</h2>
+                <p>Implementamos medidas de segurança avançadas:</p>
+                <p>• 🔒 Encriptação de dados sensíveis (SSL/TLS)</p>
+                <p>• 🛡️ Acesso restrito a pessoal autorizado</p>
+                <p>• 📊 Auditorias regulares de segurança</p>
+                <p>• 💾 Backups automáticos e seguros</p>
+                <p><strong>Conservação:</strong> Conservamos os dados apenas durante o período necessário para as finalidades indicadas ou exigido por lei.</p>
+            </section>
+
+            <section class="section">
+                <h2>9. Comissão Nacional de Proteção de Dados</h2>
+                <p>Se considerar que o tratamento dos seus dados viola o RGPD, tem direito de apresentar reclamação junto da:</p>
+                <a href="https://www.cnpd.pt" class="contact-button" style="margin: 15px 0;">
+                    <span class="icon">⚖️</span>
+                    <span>Comissão Nacional de Proteção de Dados (CNPD)</span>
+                </a>
+            </section>
+
+            <section class="section">
+                <h2>10. Alterações à Política</h2>
+                <p>Esta política pode ser atualizada para refletir:</p>
+                <p>• Mudanças legais ou regulamentares</p>
+                <p>• Novos serviços ou funcionalidades</p>
+                <p>• Melhorias nos processos de segurança</p>
+                <p><strong>Notificação:</strong> Alterações significativas serão comunicadas através do email registado ou na aplicação com 30 dias de antecedência.</p>
+            </section>
+        </div>
+
+        <div class="footer">
+            <div class="footer-logo">Salt Flow ≋ Surf & SUP School</div>
+            <div class="footer-links">
+                <a href="https://saltflowsurf.com" class="footer-link">Website</a>
+                <a href="https://instagram.com/saltflowsurf" class="footer-link">Instagram</a>
+                <a href="https://facebook.com/saltflowsurf" class="footer-link">Facebook</a>
+                <a href="mailto:hello@saltflowsurf.com" class="footer-link">Contacto</a>
+            </div>
+            <p style="margin-top: 20px; color: #adb5bd; font-size: 14px;">
+                © 2024 Salt Flow - Ofir Surf School. Todos os direitos reservados.<br>
+                Praia de Ofir, Fão, Esposende | NIF: PT123456789
+            </p>
+        </div>
+    </div>
+
+    <a href="#" class="back-to-app" id="backButton">
+        Voltar para a App
+    </a>
+
+    <script>
+        // Smart back button functionality
+        document.getElementById('backButton').addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Try to go back in history
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                // If no history, try to close the window
+                if (window.opener) {
+                    window.close();
+                } else {
+                    // Redirect to app store or main website
+                    window.location.href = 'https://saltflowsurf.com';
+                }
+            }
+        });
+
+        // Add print button functionality
+        const printButton = document.createElement('button');
+        printButton.innerHTML = '🖨️ Imprimir';
+        printButton.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            border: 2px solid #4a90e2;
+            color: #4a90e2;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 1001;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        `;
+        
+        printButton.addEventListener('mouseenter', () => {
+            printButton.style.background = '#4a90e2';
+            printButton.style.color = 'white';
+        });
+        
+        printButton.addEventListener('mouseleave', () => {
+            printButton.style.background = 'white';
+            printButton.style.color = '#4a90e2';
+        });
+        
+        printButton.addEventListener('click', () => {
+            window.print();
+        });
+        
+        document.body.appendChild(printButton);
+
+        // Add copy email functionality
+        document.querySelectorAll('.contact-button').forEach(button => {
+            if (button.href && button.href.includes('mailto:')) {
+                button.addEventListener('click', function(e) {
+                    const email = this.href.replace('mailto:', '');
+                    navigator.clipboard.writeText(email).then(() => {
+                        const originalText = this.innerHTML;
+                        this.innerHTML = '📋 Email copiado!';
+                        setTimeout(() => {
+                            this.innerHTML = originalText;
+                        }, 2000);
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
